@@ -27,7 +27,7 @@ Suma de los dígitos pares: 10
 public class Ej2 {
     public static void main(String[] args) {
         //Variables:
-        long n; //numero del usuario tipo long
+        long n; //número del usuario tipo long
         String numeroUsuario;
         String pares;
         int sumaPares;
@@ -36,13 +36,13 @@ public class Ej2 {
         n = ro.nextLong();
 
         //Paso 1. Pasamos el número del usuario a String para recorrerla con for.
-        //Nota:valueOf me da el valor primitivo del numero que le estamos pasando.
+        //Nota:valueOf me da el valor primitivo del número que le estamos pasando.
         numeroUsuario = String.valueOf(n);
         pares = new String();
         sumaPares=0;
-        //Paso 2. Recorremos la string resultante de numeroUsuario en cada posicion
+        //Paso 2. Recorremos la string resultante de numeroUsuario en cada posición
         for (int i = 0; i < numeroUsuario.length(); i++) {
-            /*Si mi cadena del numero del usuario contiene una cifra 'par' en la pos 'i' que estoy mirando
+            /*Si mi cadena del número del usuario contiene una cifra 'par' en la pos 'i' que estoy mirando
               paso de char a int para poder dividir entre 2 y obtener el resto=0*/
             if (Character.getNumericValue(numeroUsuario.charAt(i))%2==0) {
                 //lo añado a la variable'pares', inserto el espacio para separarlos.

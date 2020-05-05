@@ -13,7 +13,7 @@ números con n filas como en la siguiente figura:
  */
 public class Ej1VersionB {
     public static void main(String[] args) {
-        //FORMA 1.
+        
         Scanner ro = new Scanner(System.in);
         System.out.println("Dame un numero 'n' de filas: ");
         //variables
@@ -43,9 +43,9 @@ public class Ej1VersionB {
             //Paso 2. Pinto pirámide para 'n'
             for (int j = 1; j <=cantCifrasPorFila ; j++) {
 
-                /*Concición 1: encontrar el punto medio que es la cifra '3' en la tercera fila de la tercera columna.
-                Si la columna está en una posicion menor o igual que la fila, se irá incrementando el numero a escribir
-                en la piramide, sino habrá un decremento de dicho número.
+                /*Condición 1: encontrar el punto medio que es la cifra '3' en la tercera fila de la tercera columna.
+                Si la columna está en una posición menor o igual que la fila, se irá incrementando el número a escribir
+                en la pirámide, sino habrá un decremento de dicho número.
                  */
                 if(j<=i){
                     //pinta el lado izquierdo de la pirámide, incluyendo la línea central.

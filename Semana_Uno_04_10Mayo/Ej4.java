@@ -40,7 +40,7 @@ public class Ej4 {
             System.out.println("");
         }
 
-        //Cerramos teclaro
+        //Cerramos teclado
         ro.close();
 
     }

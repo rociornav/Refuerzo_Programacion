@@ -28,20 +28,20 @@ public class Ej5 {
         System.out.println("Por favor, introduzca un número entero positivo:");
         n=ro.nextInt();
 
-        //Restriccion para comprobar que n es positivo
+        //Restricción para comprobar que n es positivo
         while (n < 0) {
             System.out.println("Por favor, introduzca un número entero positivo:");
             n = ro.nextInt();
         }
 
-        //Bucle for para mostrar los 5 numeros consecutivos incluyendo n
+        //Bucle for para mostrar los 5 números consecutivos incluyendo n
         for (int i = n; i <n+5 ; i++) {
-            //Nota: ponerlo a true dentro del primer for, y así se reinicia a true en cada iteracion
+            //Nota: ponerlo a true dentro del primer for, y así se reinicia a true en cada iteración
             esPrimo=true;
-            //Comprobar si tiene mas de un divisor distinto a 1 y a si mismo
+            //Comprobar si tiene mas de un divisor distinto a 1 y a sí mismo
             for(int x=2; x<i;x++){
-                //Condicion 1. Detectando no primos:
-                // Si es divisible entre algun numero de la secuencia de 'x' (desde 2 hasta 'i' sin incluir)
+                //Condición 1. Detectando no primos:
+                // Si es divisible entre algún número de la secuencia de 'x' (desde 2 hasta 'i' sin incluir)
                 if(i%x==0){
                     //No es primo.
                     esPrimo=false;
@@ -50,7 +50,7 @@ public class Ej5 {
                 }
             }
 
-            //Condicion 2. Si esPrimo==true mostrar mensaje 'es primo'
+            //Condición 2. Si esPrimo==true mostrar mensaje 'es primo'
             if(esPrimo){
                 System.out.println(i+" es primo.");
             }else{

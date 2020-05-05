@@ -2,7 +2,8 @@ package SemanaUno_4a10Mayo;
 //Versión 1 del ejercicio de número a cadena.
 import java.util.Scanner;
 
-/*
+/* 04/05/20 RRN
+Enunciado:
 Escribe un programa que lea un número n e imprima una pirámide de
 números con n filas como en la siguiente figura:
    1
@@ -20,14 +21,14 @@ public class Ej1VersionA {
         System.out.println("Dame un numero n de filas: ");
         n = ro.nextInt();
 
-        //Paso 1. Conseguir la secuencia de numeros desde '1 a n' y pasarla a String
+        //Paso 1. Conseguir la secuencia de números desde '1 a n' y pasarla a String
         for (int i = 1; i <= n; i++) {
             cad = cad + i;
         }
-        //Para comprobar si esta bien guardado: System.out.println(cad);
+        //Para comprobar si está bien guardado: System.out.println(cad);
 
 
-        //Paso 2. Conseguir el cuadrado; luego poner condiciones con if e ir pintando buscando el patron;
+        //Paso 2. Conseguir el cuadrado; luego poner condiciones con if e ir pintando buscando el patrón;
         anchoTotal = (cad.length() * 2) - 1; //para n=4 --> anchoTotal=7; anchoTotal=(cad.length()*2)-1=(4*2)-1=7;
         for (int i = 0; i < anchoTotal; i++) {
 
@@ -37,12 +38,12 @@ public class Ej1VersionA {
                     System.out.print(" ");
                 }
 
-                //Lado izquierdo de la piramide incluyendo la linea central.
+                //Lado izquierdo de la pirámide incluyendo la línea central.
                 for (int j = 0; j <= i; j++) { //ponemos el incremento
                     System.out.print(cad.charAt(j));
                 }
 
-                //Lado derecho: resto de la piramide
+                //Lado derecho: resto de la pirámide
                 for (int j = i - 1; j >= 0; j--) { //ponemos el decremento
                     System.out.print(cad.charAt(j));
                 }

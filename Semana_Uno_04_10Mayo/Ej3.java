@@ -33,7 +33,7 @@ public class Ej3 {
         for (int i = 0; i < alturaU; i++) { //filas=alto
             for (int j = 0; j < alturaU; j++) { //columnas=ancho
                 //Paso 2. Pintar la U y poner las condiciones indicando dónde pintar.
-                //Condición 1. ((j==0||j==alturaU-1)&& i<alturaU-1) --> pinta laterales de la U excepto la ultima fila
+                //Condición 1. ((j==0||j==alturaU-1)&& i<alturaU-1) --> pinta laterales de la U excepto la última fila
                 //Condición 2. (i==alturaU-1 && j!=0 && j<alturaU-1) --> pinta la base de la U
                 if(((j==0||j==alturaU-1)&& i<alturaU-1) || (i==alturaU-1 && j!=0 && j<alturaU-1)){
                     System.out.print("* ");
