@@ -16,7 +16,7 @@ Introduzca la posición dentro del número: 3
 Introduzca el nuevo dígito: 1
 El número resultante es 401783
  */
-public class Ej6VersionUno_DividiendoEntre10 {
+public class Ej6VersionA_DividiendoEntre10 {
     public static void main(String[] args) {
         Scanner ro=new Scanner(System.in);
         //Definir variables
@@ -64,8 +64,6 @@ public class Ej6VersionUno_DividiendoEntre10 {
             aux=aux/10;
             contador++;
         }
-
-        // System.out.println("Resultado prueba 1 = "+prueba); esto elimina los ceros del final, pues no hay forma de ponerlos al principio con int
 
         //System.out.println("Probando rdo al reves: "+ prueba);
 

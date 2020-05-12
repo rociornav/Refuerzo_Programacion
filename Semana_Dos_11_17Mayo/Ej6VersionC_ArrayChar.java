@@ -15,7 +15,7 @@ Introduzca la posición dentro del número: 3
 Introduzca el nuevo dígito: 1
 El número resultante es 401783
  */
-public class Ej6VersionTres_ArrayChar {
+public class Ej6VersionC_ArrayChar {
     public static void main(String[] args) {
         //Como array de caracteres
         Scanner ro=new Scanner(System.in);

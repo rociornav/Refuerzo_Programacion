@@ -17,14 +17,13 @@ Introduzca la posición dentro del número: 3
 Introduzca el nuevo dígito: 1
 El número resultante es 401783
  */
-public class Ej6VersionDos_ConFuncionesString {
+public class Ej6VersionB_ConFuncionesString {
     public static void main(String[] args) {
         Scanner ro=new Scanner(System.in);
         //Definir variables
         long n;
         int posicion;
         int digito;
-        //long res=0;
         String n2="";
         String res="";
 
@@ -45,13 +44,21 @@ public class Ej6VersionDos_ConFuncionesString {
         for (int i = 0; i <n2.length() ; i++) {
             //Si la i es igual a la posicion del usuario, insertamos el nuevo digito.
             if(i==posicion-1){ //posicion - 1 , ya que el usuario nos da la posicion empezando en 1
+                //***Insertar nuevo digito en la posicion indicada***
                 /*Nota personal: de haber sido 'res' de tipo 'long' lo multiplicariamos por 10,
                  (res*10) para no machacar el resultado anterior*/
                 res=(res)+digito;
             }else{
-                res=(res)+Character.getNumericValue(n2.charAt(i));
+                /*Tambien funciona si lo hago asi: res=(res)+Character.getNumericValue(n2.charAt(i));
+                Pero el metodo getNumericValue me retorna un int, por lo que al ser 'res' de tipo String
+                no tiene sentido usarlo.
+                 */
+                //***Inserto el resto de digitos en el resultado.***
+                res=(res)+n2.charAt(i);
             }
         }
+
+        //Resultado:
         System.out.println("Resultado final: "+res);
 
         //Cerramos teclado
