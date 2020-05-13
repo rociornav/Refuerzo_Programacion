@@ -20,7 +20,7 @@ Ahora introduzca la anchura (como mínimo 4): 7
 *       &   *
 * * * * * * *
  */
-public class Ej10 {
+public class Ej10_Pecera {
     public static void main(String[] args) {
         Scanner ro=new Scanner(System.in);
         //Definir variables
