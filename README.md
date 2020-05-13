@@ -1,2 +1,2 @@
-# Refuerzo_Programacion
-Planes de trabajo por cada semana de mayo de 2020 para reforzar la asignatura de Programación de DAW1.
+# Tareas de Refuerzo Programación
+Planes de trabajo por cada semana de mayo de 2020 para reforzar la asignatura de Programación de DAW1 -Evaluación 1-.
