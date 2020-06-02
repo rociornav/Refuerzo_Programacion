@@ -40,7 +40,7 @@ public class Ej1UnaTorre {
         }
         System.out.println();
 
-       do{// NO VAN LAS VALIDACIONES..... Ej: c10 no va. entre otros...
+       do{
 
             System.out.println("Introduzca la posición de la torre (primero la letra y luego el numero):");
             pos=ro.nextLine();
