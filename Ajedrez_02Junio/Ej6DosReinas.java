@@ -8,8 +8,12 @@ public class Ej6DosReinas {
         //Variables blanca
         int posColBlanca, posFilaBlanca;
         //Variables negra
+
         int posColNegra= (int) (Math.random()*8+1);
         int posFilaNegra= (int) (Math.random()*8+1);
+        /*para probar una posicion elegida por mi: Ej: negra al h1.
+        int posColNegra=8;
+        int posFilaNegra=1;*/
         System.out.println("Posicion de la Reina Negra: "+(char)(posColNegra+96)+posFilaNegra);
         //ENTRADA DATOS REINA BLANCA.
         do{
@@ -65,6 +69,10 @@ public class Ej6DosReinas {
                     //quito la posicion donde se encuentra para que no la muestre
                     if(((char)(columna+96)+fila)==((char)(posColNegra+96)+posFilaNegra)){
                         estaMuerta=true;
+                    }else{
+                        /*Poner siempre esto: antes salia este fallo:
+                         si reina negra=h1 y reina blanca=a7 no puede matarla, pero el programa dice que si (ARREGLADO CON ESTE ELSE)*/
+                        estaMuerta=false;
                     }
                 }
             }
@@ -75,5 +83,7 @@ public class Ej6DosReinas {
         }else{
             System.out.println("NO puede matar a la Reina Negra");
         }
+
+
     }
 }
